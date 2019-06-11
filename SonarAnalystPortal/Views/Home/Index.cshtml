@@ -18,7 +18,7 @@
             var table = $("#unAssignedData").DataTable({
                 "bLengthChange": false,
                 "ajax": {
-                    "url": "/ExoFns/GetNonAssignedData",
+                    "url": "/EntitySubmissions/GetNonAssignedData",
                     "type": "GET",
                     "datatype": "json"
                 },
@@ -37,7 +37,7 @@
             var table2 = $("#assignedData").DataTable({
                 "bLengthChange": false,
                 "ajax": {
-                    "url": "/ExoFns/GetAssignedData",
+                    "url": "/EntitySubmissions/GetAssignedData",
                     "type": "GET",
                     "datatype": "json"
                 },
@@ -67,9 +67,12 @@
 
             $('#btnAssign').click(function () {
                 alert(table.rows('.active').data().length);
+                var selectData = JSON.stringify(table.rows('.active').data().toArray());
                 $.ajax({
-                    url: "/ExoFns/AssignEntity",
-                    data: table.rows('.active').data(),
+                    contentType: 'application/json',
+                    url: "/EntitySubmissions/AssignEntity",
+                    //data: JSON.stringify({ 'entities': selectData }) ,
+                    data : selectData,
                     method: "POST"
                 }).done(function () {
                     alert("done");

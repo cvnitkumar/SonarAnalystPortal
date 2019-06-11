@@ -8,11 +8,11 @@ using System.Web.Mvc;
 
 namespace SonarAnalystPortal.Controllers
 {
-    public class ExoFnsController : Controller
+    public class EntitySubmissionsController : Controller
     {
         string user;
 
-        public ExoFnsController()
+        public EntitySubmissionsController()
         {
             
         }
@@ -38,7 +38,7 @@ namespace SonarAnalystPortal.Controllers
             return Json(new { data = fnList }, JsonRequestBehavior.AllowGet);
         }
 
-        public ActionResult AssignEntity(List<ATPFnDetail> entities)
+        public ActionResult AssignEntity(IList<ATPFnDetail> entities)
         {
             user = ((System.Security.Claims.ClaimsIdentity)(User.Identity)).Name.Split('@')[0].Trim();
             var baObj = new EntitySubmissionBA();

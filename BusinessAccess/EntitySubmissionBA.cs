@@ -29,7 +29,8 @@ namespace BusinessAccess
                     EntityId = entity.Id,
                     OldState = "0",
                     NewState = "1",
-                    Notes = $"Entity is assigne to {entity.AnalystName}"
+                    Notes = $"Entity is assigne to {entity.AnalystName}",
+                    Username = userName
                 });
             }
 
