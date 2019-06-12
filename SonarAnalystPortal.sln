@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataRepository", "DataRepos
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessAccess", "BusinessAccess\BusinessAccess.csproj", "{1A0883B7-D8E6-4D12-ADE8-556987512C47}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SonarAnalystAPI", "SonarAnalystAPI\SonarAnalystAPI.csproj", "{D996082F-79F4-4E7F-B78A-FDA07E706654}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{1A0883B7-D8E6-4D12-ADE8-556987512C47}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1A0883B7-D8E6-4D12-ADE8-556987512C47}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1A0883B7-D8E6-4D12-ADE8-556987512C47}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D996082F-79F4-4E7F-B78A-FDA07E706654}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D996082F-79F4-4E7F-B78A-FDA07E706654}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D996082F-79F4-4E7F-B78A-FDA07E706654}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D996082F-79F4-4E7F-B78A-FDA07E706654}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
